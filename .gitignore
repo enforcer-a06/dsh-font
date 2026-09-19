@@ -1,0 +1,5 @@
+# Local installs / platform noise
+node_modules/
+.dsh-module-fallback/
+.DS_Store
+*.log

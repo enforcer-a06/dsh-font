@@ -1,0 +1,39 @@
+{
+  "name": "dsh-font",
+  "version": "1.0.0",
+  "description": "Hack Nerd Font Mono for the whole DeepSeek Harness web GUI (UI + code/terminal). Sets the shell's own font hooks, so it is independent of whichever theme is active.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "font",
+    "nerd-font",
+    "hack"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
